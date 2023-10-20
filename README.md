@@ -1,7 +1,24 @@
-# Vue 3 + Vite
+<h1 align="center">
+    <a href="https://laravelcollective.com/tools/banner">
+        <img alt="Banner" title="#Banner" style="object-fit: cover; height:125px;" src="./src/assets/logo-red.png"/>
+    </a>
+</h1>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# 🤖 Marvel Explorer
 
-## Recommended IDE Setup
+## Aplicativo para explorar o universo marvel
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+<h2 align="center">
+  <img src="https://img.shields.io/badge/Site-ok-gree?style=for-the-badge" alt="Site" />
+  <img src="https://img.shields.io/badge/Mobile-OK-gree?style=for-the-badge" alt="Aplicativo mobile Ok" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?color=gree&style=for-the-badge" alt="License" />
+</h2>
+
+
+## 📋 Descrição
+
+
+## 🎯 Motivo
+
+------------------------
+
