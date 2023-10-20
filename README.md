@@ -4,7 +4,13 @@
     </a>
 </h1>
 
+------------------------
+
+
 # 🤖 Marvel Explorer
+
+------------------------
+
 
 ## Aplicativo para explorar o universo marvel
 
@@ -14,9 +20,11 @@
   <img src="https://img.shields.io/badge/License-MIT-blue?color=gree&style=for-the-badge" alt="License" />
 </h2>
 
+------------------------
 
 ## 📋 Descrição
 
+------------------------
 
 ## 🎯 Motivo
 
