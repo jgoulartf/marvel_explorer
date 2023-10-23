@@ -1,17 +1,10 @@
-// Import our custom CSS
+// Bootstrap
 import '../css/styles.css'
+import 'bootstrap/dist/css/bootstrap.css'
 
 import App from '../App.vue'
+import router from './router'
+
 import { createApp } from 'vue'
-import * as Popper from "@popperjs/core"
 
-
-// Import all of Bootstrap's JS
-import 'bootstrap/dist/css/bootstrap.css'
-import * as bootstrap from 'bootstrap'
-
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap"
-
-
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')

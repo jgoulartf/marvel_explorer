@@ -6,10 +6,6 @@ import TopBar from "../TopBar.vue";
 
 <template>
 
-  <TopBar/>
-  <button class="btn btn-primary">Primary button</button>
-
-  <h1>Teste</h1>
 
 </template>
 

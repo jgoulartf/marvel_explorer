@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <h1>Character visualization</h1>
 
 </template>
 

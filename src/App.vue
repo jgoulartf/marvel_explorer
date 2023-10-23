@@ -1,15 +1,29 @@
-<script setup>
-import HomeVisualization from "./components/Visualization/HomeVisualization.vue";
+<script>
+import {defineComponent} from "vue";
+import TopBar from "./components/TopBar.vue";
+
+export default defineComponent({
+  components: {TopBar}
+})
+
 
 </script>
 
 <template>
 
-<HomeVisualization/>
-
+  <TopBar/>
+  <main>
+    <router-view />
+  </main>
 </template>
 
-<style scoped lang="sass">
-
-
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
