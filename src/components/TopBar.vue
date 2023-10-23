@@ -3,16 +3,24 @@
 </script>
 
 <template>
+    <div class="row">
 
-  <nav>
-    <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> |
-    <router-link to="/character">Character</router-link>
+      <div class="col">
+        <img src="../assets/logo-red.png" width="139" height="56" alt="marvel logo" style="margin-top: 16px; margin-bottom: 16px">
+      </div>
 
-    <router-link to="/character">Character</router-link>
+      <div class="col">
+        <nav>
+          <router-link to="/">Home</router-link> |
+          <router-link to="/character">Characters</router-link> |
+          <router-link to="/comics">Comics</router-link> |
+          <router-link to="/Events">Events</router-link> |
+          <router-link to="/contact">Contact</router-link> |
+        </nav>
+      </div>
 
-  </nav>
 
-
+  </div>
 
 </template>
 
