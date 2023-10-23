@@ -1,5 +1,5 @@
 // Import our custom CSS
-import '../scss/styles.scss'
+import '../css/styles.css'
 
 import App from '../App.vue'
 import { createApp } from 'vue'
@@ -10,6 +10,8 @@ import * as Popper from "@popperjs/core"
 import 'bootstrap/dist/css/bootstrap.css'
 import * as bootstrap from 'bootstrap'
 
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap"
 
 
 createApp(App).mount('#app')
