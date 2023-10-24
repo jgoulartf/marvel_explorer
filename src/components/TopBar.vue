@@ -3,27 +3,58 @@
 </script>
 
 <template>
-    <div class="row">
+  <nav class="navbar navbar-expand-lg topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <a class="navbar-brand" href="#">
 
-      <div class="col">
-        <img src="../assets/logo-red.png" width="139" height="56" alt="marvel logo" style="margin-top: 16px; margin-bottom: 16px">
+          <img src="../assets/logo-red.png"
+               width="100"
+               height="35"
+               alt="marvel logo"
+               style="margin-top: 16px; margin-bottom: 16px; margin-left: 5%">
+          </a>
+        </div>
+
       </div>
 
-      <div class="col">
-        <nav>
-          <router-link to="/">Home</router-link> |
-          <router-link to="/character">Characters</router-link> |
-          <router-link to="/comics">Comics</router-link> |
-          <router-link to="/Events">Events</router-link> |
-          <router-link to="/contact">Contact</router-link> |
-        </nav>
-      </div>
+        <div class="col-2"></div>
 
+        <div class="col-8" id="navbarSupportedContent" style="text-align: right;">
 
-  </div>
+          <router-link to="/">
+            <button type="button" class="my-btn btn">Home</button>
+          </router-link>
 
+          <router-link to="/character">
+            <button type="button" class="my-btn btn">Characters</button>
+          </router-link>
+
+          <router-link to="/comics">
+            <button type="button" class="my-btn btn">Comics</button>
+          </router-link>
+
+          <router-link to="/Events">
+            <button type="button" class="my-btn btn">Events</button>
+          </router-link>
+
+          <router-link to="/contact">
+            <button type="button" class="my-btn btn">Contact</button>
+          </router-link>
+
+        </div>
+    </div>
+  </nav>
 </template>
 
 <style scoped>
+  .topbar {
+    background-color: #EC1D24;
+  }
 
+  .my-btn{
+    font-weight: bold;
+    color:white;
+  }
 </style>

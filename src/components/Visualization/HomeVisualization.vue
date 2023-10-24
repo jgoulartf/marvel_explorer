@@ -5,13 +5,13 @@ import TopBar from "../TopBar.vue";
 </script>
 
 <template>
-  <div>
+  <div class="container">
 
     <div class="row float-start" style="color: #767676;">
-      <div class="col mt-1">
+      <div class="col">
         <ion-icon name="home" size="small"></ion-icon>
       </div>
-      <div class="col mt-1 mr-2">
+      <div class="col">
         <h6>Home</h6>
       </div>
     </div>

@@ -1,8 +1,10 @@
 <script setup>
-defineProps({
-  imageURL: String,
-  characterName: String
-})
+
+  defineProps({
+    imageURL: String,
+    characterName: String
+  })
+
 </script>
 
 <template>

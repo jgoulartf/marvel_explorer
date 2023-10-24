@@ -10,13 +10,11 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="container">
 
     <TopBar/>
     <main>
       <router-view />
     </main>
-  </div>
 
 </template>
 

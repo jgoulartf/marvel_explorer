@@ -10,12 +10,12 @@ defineProps({
 
 <template>
 
-  <div class="col">
+  <div class="col" style="height: 389px" width="186px">
 
     <div class="row">
-      <img :src="thumb" alt="">
+      <img :src="thumb" alt="" height="283">
     </div>
-    <div class="row" style="color: black; font-weight: bold;">
+    <div class="row mt-1" style="color: black; font-weight: bold;">
       <h5>{{ comicTitle }}</h5>
     </div>
     <div class="row" style="color: black;">
