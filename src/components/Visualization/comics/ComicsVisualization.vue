@@ -1,17 +1,22 @@
 <script setup>
 
-// TODO: Montar array de personagens vindo da api
-import ClickableCharacter from "../characters/ClickableCharacter.vue";
-import ComicThumb from "./ComicThumb.vue";
+  import ComicThumb from "./ComicThumb.vue";
+  import {onMounted} from "vue";
 
-const comics = [
-    {
-      "thumb": "THUMB",
-      "comicTitle": "MARVEL PREVIEWS 2017",
-      "comicPages": 112
-    },
-    ]
-
+  // URL que retorna as comics
+  let marvelURL = "https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=c9d540c85bf58fb51ee85c29e3d7f938&hash=d944602110d13bedeaa80996b4a069d6"
+  let comics = []
+  onMounted(() => {
+    fetch(marvelURL)
+        .then(response => response.json())
+        .then(json => {
+          comics = json.data.results
+          comics.map((comic) => {
+            comic.thumbnail.path = comic.thumbnail.path + '.' + comic.thumbnail.extension
+          })
+          console.log(comics)
+        })
+  })
 
 </script>
 
@@ -20,19 +25,21 @@ const comics = [
     <div class="col mt-1">
       <ion-icon name="home" size="small"></ion-icon>
     </div>
+    <h6>Comics</h6>
 
-    </div>
-    <div class="row">
-
+  </div>
     <div class="col mt-1 mr-2">
-
 
       <div class="row float-start">
         <div class="col" v-for="(comic, index) in comics" :key="index">
 
           <!-- Conteúdo do herói aqui -->
           <div  style="margin-top: 64px;">
-            <ComicThumb :thumb="comic.thumb" :comic-title="comic.comicTitle" :comic-pages="comic.comicPages" />
+            <ComicThumb
+                :thumb="comic.thumbnail.path"
+                :comic-title="comic.title"
+                :comic-pages="comic.pageCount"
+            />
           </div>
 
         </div>
@@ -40,9 +47,6 @@ const comics = [
     </div>
 
 
-    </div>
-
-  </div>
 
 </template>
 

@@ -13,7 +13,7 @@ defineProps({
   <div class="col">
 
     <div class="row">
-      <h1>{{ thumb }}</h1>
+      <img :src="thumb" alt="">
     </div>
     <div class="row" style="color: black; font-weight: bold;">
       <h5>{{ comicTitle }}</h5>
@@ -21,6 +21,7 @@ defineProps({
     <div class="row" style="color: black;">
       PAGES: {{ comicPages }}
     </div>
+
   </div>
 
 
