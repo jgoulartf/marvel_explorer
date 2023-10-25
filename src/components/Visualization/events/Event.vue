@@ -13,31 +13,26 @@
 </script>
 
 <template>
-  <div class="container">
     <div class="row">
 
-      <div class="col-5">
-        <img :src="thumb" alt="" height="230">
+      <div class="col-xl-6 col-md-12 col-12">
+        <img :src="thumb" alt="" height="230" width="300">
       </div>
 
-      <div class="col-7">
+      <div class="col-xl-6 col-md-6 col-12">
 
-        <div class="row my-text" >
+        <div class="row my-text justify-content-center" >
           <h5>{{ eventTitle }}</h5>
-
 
           <h6>{{ eventDescription }}</h6>
 
-
-
         </div>
         <br>
-        <b>DATE OF THE EVENT: {{ eventDate }}</b>
+        <b style="color: black">DATE OF THE EVENT: {{ eventDate }}</b>
 
       </div>
 
     </div>
-  </div>
 
 
 
@@ -53,5 +48,6 @@
   display: -webkit-box;
   -webkit-line-clamp: 8; /* quantidade de linhas */
   -webkit-box-orient: vertical; /* conteúdo será apresentado verticalmente */
+  color: black;
 }
 </style>

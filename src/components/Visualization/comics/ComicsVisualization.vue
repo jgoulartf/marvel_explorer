@@ -1,7 +1,7 @@
 <script setup>
 
   import ComicThumb from "./ComicThumb.vue";
-  import {onBeforeMount, onMounted, ref} from "vue";
+  import {ref} from "vue";
 
   // URL que retorna as comics
   let comics = ref([])
@@ -13,7 +13,7 @@
           comics.value = json.data.results
           comics.value.map((comic) => {
             comic.thumbnail.path = comic.thumbnail.path + '.' + comic.thumbnail.extension
-            //console.log(comic.pageCount)
+
           })
         })
   }
@@ -24,24 +24,24 @@
 </script>
 
 <template>
-  <div class="container">
-    <div class="row float-start mt-3" style="color: #767676;">
+  <div class="container mt-3">
+    <div class="row float-start" style="color: #767676;">
       <div class="col-1">
         <ion-icon name="home" size="small"></ion-icon>
       </div>
       <div class="col-2">
-        <h6> Comics</h6>
+        <h6 style="font-weight: normal"> Comics</h6>
       </div>
     </div>
 
 
-    <div class="col-12 mt-1 mr-2">
+    <div class="">
 
       <div class="row float-start">
-        <div class="col-2" v-for="(comic, index) in comics" :key="index">
+        <div class="col-6 col-xl-2" v-for="(comic, index) in comics" :key="index">
 
           <!-- Conteúdo do herói aqui -->
-          <div  style="margin-top: 64px;">
+          <div  style="margin-top: 5%;">
             <ComicThumb
                 :thumb="comic.thumbnail.path"
                 :comic-title="comic.title"

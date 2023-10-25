@@ -1,10 +1,23 @@
 <script setup>
+  import {onMounted} from "vue";
+  import { Modal } from 'bootstrap'
+
+  let modal;
+
+  onMounted(() => {
+    modal = new Modal(document.getElementById("modal"))
+  })
+
+  const showModal = () => {
+    modal.show()
+  }
 
 </script>
 
 <template>
   <div class="row">
-    <div class="col">
+    <div class="col-12" style="color:black">
+
       <form>
 
         <div class="form-group">
@@ -27,14 +40,32 @@
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <!-- TODO: Adicionar disabled do botao baseado nos campos do form-->
-        <button type="submit" class="btn btn-primary mt-2" style="width: 96px;height: 41px" >Send</button>
 
-
+        <!-- Button trigger modal -->
+        <button type="button" @click="showModal" class="btn btn-primary mt-3" >
+          Send
+        </button>
       </form>
 
     </div>
-    <div class="col">
 
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: black">Message sent successfully!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="color: black">
+          Thank you, we'll reach you as soon as possible
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="background-color: #EC1D24" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 

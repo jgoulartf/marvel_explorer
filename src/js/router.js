@@ -31,7 +31,7 @@ export default createRouter({
             component: ContactVisualization,
         },
         {
-            path: '/characterDetail',
+            path: '/characterDetail/:id',
             name: 'characterDetail',
 
             component: CharacterDetailVisualization,

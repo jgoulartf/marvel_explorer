@@ -1,7 +1,7 @@
 <script setup>
 
   defineProps({
-    imageURL: String,
+    image: String,
     characterName: String
   })
 
@@ -9,14 +9,18 @@
 
 <template>
 
-
-  <div class="card">
-    <img :src="imageURL" class="card-img-top" alt="Hero Image">
-    <div class="card-body">
-      <h5 class="card-title">{{ characterName }}</h5>
-
+  <div class="container">
+    <div class="row" style="width: 186px; height: 183px">
+      <img :src="image" alt="" >
     </div>
+
+    <div class="row mt-3">
+      <h5 style="color: black">{{characterName}}</h5>
+    </div>
+
   </div>
+
+
 
 
 </template>

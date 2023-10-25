@@ -3,21 +3,22 @@
 </script>
 
 <template>
-  <div class="container">
+  <div class="container mt-3">
     <div>
       <div class="row float-start" style="color: #767676;">
-        <div class="col">
+        <div class="col-1">
           <ion-icon name="home" size="small"></ion-icon>
         </div>
-        <div class="col">
-          <h6>Contact</h6>
+        <div class="col-11">
+          <h6 style="font-weight: normal">Contact</h6>
+        </div>
+        <div class="row">
+          <div class="mt-2">
+            <ContactForm/>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="mt-5">
-          <ContactForm/>
-        </div>
-      </div>
+
     </div>
   </div>
 </template>
